@@ -1,0 +1,16 @@
+[
+    { "id":"1",
+    "name":"Mate Imperial",
+    "price":5000
+
+    },
+
+    { "id":"2",
+    "name":"Termo Stanley",
+    "price":10000
+
+    }
+
+
+
+]
