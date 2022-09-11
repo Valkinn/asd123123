@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import ButtonCount from "./ButtonCount"
 
 function ItemCount(){
     const [counter, setCounter] = useState(0)
@@ -18,6 +19,7 @@ return (
     <div className='my-3'>
     <strong>Contador:{counter}</strong>
     <button onClick={handleClick} className='btn'>Añadir al carrito</button>
+    <ButtonCount onClick={handleClick}></ButtonCount>
   </div>
   
   

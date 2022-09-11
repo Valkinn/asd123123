@@ -1,13 +1,22 @@
 [
     { "id":"1",
     "name":"Mate Imperial",
-    "price":5000
+    "price":6000,
+    "img":"../img/Mate.jpg"
 
     },
 
     { "id":"2",
     "name":"Termo Stanley",
-    "price":10000
+    "price":10000,
+    "img":"../img/Termo1.jpg"
+
+    },
+
+    { "id":"3",
+    "name":"Termo Montagne",
+    "price":10000,
+    "img":"../img/Termo2.jpg"
 
     }
 
