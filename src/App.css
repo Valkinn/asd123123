@@ -9,3 +9,8 @@
   background-color: whitesmoke;
   padding-top: 2%;
 };
+
+.textWhite{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}

@@ -1,8 +1,16 @@
+import '../App.css';
+import { useItems } from '../context/CartContext';
 const ItemDetail = ({item}) => {
+
+
+
   return (
     
     (
-      <div className="card w-60 bg-base-100 shadow-xl">
+      <div>
+        
+        
+      <div className="card bg-primary-content w-60 bg-base-100 shadow-xl">
           <figure className="px-10 pt-10">
               <img src={item.img} alt="Cargando.." className="rounded-xl" />
           </figure>
@@ -11,9 +19,10 @@ const ItemDetail = ({item}) => {
               <p>{item.description}</p>
               <p>${item.price}</p>
               <div className="card-actions">
-                <button className="btn">Añadir al carrito</button>
+            
               </div>
           </div>
+      </div>
       </div>
     )
   )

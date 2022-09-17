@@ -2,6 +2,7 @@ import ItemDetail from "./ItemDetail"
 import Products from "./productosInfo";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { CartProvider } from "../context/CartContext";
 
 
 const ItemDetailContainer = () => {
@@ -29,7 +30,11 @@ const ItemDetailContainer = () => {
         })
      }
   return (
+    <div>
+    <CartProvider>
     <ItemDetail item={item}/>
+    </CartProvider>
+    </div>
   )
 }
 export default ItemDetailContainer

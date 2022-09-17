@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useItems } from "../context/CartContext";
 import ButtonCount from "./ButtonCount";
 import ItemCount from "./ItemCount";
 
@@ -7,7 +8,10 @@ import ItemCount from "./ItemCount";
 
 export const Producto = ({ id, name, price, img }) => {
 
-
+  const {addToCart} = useItems()
+  const addHandler = () => { 
+    addToCart(' '+name+' $'+price)
+  }
   return (
     
     (
@@ -20,7 +24,8 @@ export const Producto = ({ id, name, price, img }) => {
               <p>{id}</p>
               <p>${price}</p>
               <div className="card-actions">
-              <Link className="btn" aria-current="page" to={'/ItemDetailContainer/item/'+id}>Comprar</Link>
+              <Link className="btn" aria-current="page" to={'/ItemDetailContainer/item/'+id}>Ver Descripcion</Link>
+              <button onClick={addHandler} className="btn">Añadir al carrito</button>
               </div>
           </div>
       </div>

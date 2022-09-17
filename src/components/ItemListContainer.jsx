@@ -1,11 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { useItems } from "../context/CartContext";
 import productosJson from "../productosJson.json";
 
 import { ItemList } from "./ItemList";
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
+  
+  const {Buy, clearItems} = useItems()
+
 
   useEffect(() => {
     const getItems = (data, time) =>
@@ -28,6 +32,8 @@ export const ItemListContainer = () => {
 
   return (
     <div>
+     <strong>Carrito:</strong>{Buy}
+     <button onClick={clearItems} className="btn">Borrar carrito</button>
       <ItemList items={items} />
     </div>
   );
