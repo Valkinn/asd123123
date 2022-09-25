@@ -1,6 +1,8 @@
 const Home = () => {
   return (
-    <div className="Container">Home</div>
+    <h1 className='text-5xl m-5 text-#171717-content text-center'>Bienvenido a TiendaMate</h1>
+
+    
 
 
 
